@@ -9,3 +9,9 @@ body
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
+
+table 
+{
+    border: 2px;
+    border-color: solid #3f373c;
+}
