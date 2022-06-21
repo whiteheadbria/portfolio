@@ -15,3 +15,33 @@ table
     border: 2px;
     border-color: solid #3f373c;
 }
+
+
+.menu
+{
+color:grey;
+
+}
+
+a:link
+{
+    color: blue;
+}
+
+a.visited 
+{
+    color: white;
+}
+
+a:hover
+{
+    color: slategray;
+    font-style: oblique;
+    text-decoration: dotted;
+}
+
+a:active
+{
+    color:brown;
+    font-style: italic;
+}
