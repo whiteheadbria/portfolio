@@ -1,47 +1,40 @@
-body 
-{
-    background-color: white;
-    color: #3f373c;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    font-size: 100%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-}
+.sidenavbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenavbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenavbar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenavbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
 
-table 
-{
-    border: 2px;
-    border-color: solid #3f373c;
-}
 
-
-.menu
-{
-color:grey;
-
-}
-
-a:link
-{
-    color: blue;
-}
-
-a.visited 
-{
-    color: white;
-}
-
-a:hover
-{
-    color: slategray;
-    font-style: oblique;
-    text-decoration: dotted;
-}
-
-a:active
-{
-    color:brown;
-    font-style: italic;
-}
