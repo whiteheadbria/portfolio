@@ -17,6 +17,31 @@ a:visited {
 }
 
 
+th, td {
+    border:1px solid;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+td {
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+section {
+    width: 150px;
+   word-wrap: break-word;
+}
+
+#extra {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+}
+    
+
+
 .sidenavbar {
     height: 100%;
     width: 0;
