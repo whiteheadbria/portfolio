@@ -1,3 +1,18 @@
+a {
+    text-decoration: none;
+    color: #8a9ea0;
+}
+
+a:hover {
+    color:#c0c2c9;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
 .sidenavbar {
     height: 100%;
     width: 0;
@@ -5,9 +20,9 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #708090;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 1s;
     padding-top: 60px;
   }
   
@@ -15,16 +30,16 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 30px;
-    color: #818181;
+    color: #c0c2c9;
     display: block;
-    transition: 0.3s;
+    transition: 0.1s;
   }
   
   .sidenavbar a:hover {
-    color: #f1f1f1;
+    color: #fcfaf0;
   }
   
-  .sidenavbar .closebtn {
+  .sidenavbar .closebutton {
     position: absolute;
     top: 0;
     right: 25px;
