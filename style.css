@@ -33,13 +33,11 @@ section {
    word-wrap: break-word;
 }
 
-#extra {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 18px;
+caption {
+    display: center;
+    font-size: large;
+    font-family: calibri;
 }
-    
 
 
 .sidenavbar {
