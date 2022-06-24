@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
+
+body{
+    font-family: 'Assistant', sans-serif;
+    
+}
 header{
     color:#708090;
+    border-bottom: #708090 solid 1px;
     text-align: right;
+    font-family: 'Assistant', sans-serif;
+    
+    
 }
+
+
 a {
     text-decoration: none;
-    color: #8a9ea0;
+    color: #3f373f;
 }
 
 a:hover {
@@ -17,26 +29,56 @@ a:visited {
 }
 
 
-th, td {
-    border:1px solid;
-    padding: 10px 10px;
-    text-align: center;
+.table-style
+{
+    border-collapse:collapse;
+    margin: 25px 0;  
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
 }
 
-td {
+.table-style thead tr {
+    background-color: #708090;
+    color: #3f373f;
+    font-weight: bold;
+    border: 1px solid #3f373f;
+    font-size: large;
+}
+
+.table-style th, .table-style td {
+    padding: 12px 15px;
     text-align: justify;
     word-wrap: break-word;
+    font-family: 'Assistant', sans-serif;
 }
 
-section {
-    width: 150px;
-   word-wrap: break-word;
+.table-style tbody tr {
+    border: 1px solid #3f373f;
+   
+
 }
+
+.table-style tbody tr:nth-child(even) {
+    background-color: #c0c2c9;
+
+}
+
+.table-style tbody tr:last-of-type {
+    border-bottom: 2px solid #3f373f;
+
+}
+
+
+
+
 
 caption {
-    display: center;
-    font-size: large;
-    font-family: calibri;
+    caption-side: bottom;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
 }
 
 
