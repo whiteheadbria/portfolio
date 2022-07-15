@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap');
 
 body{
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
     
 }
 header{
@@ -16,7 +20,7 @@ header{
 
 a {
     text-decoration: none;
-    color: #3f373f;
+    /*color: #3f373f; */
 }
 
 a:hover {
@@ -41,17 +45,14 @@ a:visited {
 
 .table-style thead tr {
     background-color: #708090;
-    color: #3f373f;
-    font-weight: bold;
+   /* color: #3f373f; */
     border: 1px solid #3f373f;
-    font-size: large;
 }
 
 .table-style th, .table-style td {
     padding: 12px 15px;
     text-align: justify;
     word-wrap: break-word;
-    font-family: 'Assistant', sans-serif;
 }
 
 .table-style tbody tr {
