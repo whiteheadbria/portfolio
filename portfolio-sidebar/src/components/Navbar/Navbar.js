@@ -1,4 +1,5 @@
 import React from 'react';
+import { MenuItems } from './MenuItems';
 
 class Navbar extends React.Component {
     render() {
@@ -9,10 +10,23 @@ class Navbar extends React.Component {
 
                 </div>
                 <ul>
-                    <li></li>
+                    //Creating a new array map with the values
+                    {MenuItems.map((item, index)=>{
+                            return (
+                                <li key={index}>
+                                    <a className={MenuItems.className} href={item.url}>
+                                    {item.title}
+                                    </a>
+                                </li>
+                            )
+
+                    })}
+                    
                 </ul>
             </nav>
         )
     }
 
 }
+
+export default Navbar;
