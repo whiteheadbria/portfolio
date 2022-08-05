@@ -7,7 +7,81 @@
     <link rel ="stylesheet" href="style.css">
     <script src="scripts.js"></script>
 </head>
+<style>
 
+
+
+small {
+    font-size: 0.5em;
+  }
+
+
+ .container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.responsive-table li{
+
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  
+  .table-header {
+    background-color: #95A5A6;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+
+.col {
+    flex-basis: 50%;
+}
+
+  .col-1 {
+    flex-basis: 20%;
+  }
+
+  .col-2 {
+    flex-basis: 40%;
+  }
+
+  .col-3 {
+    flex-basis: 40%;
+  }
+  
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
+    }
+
+    li {
+        display: block;
+    }
+
+    .col {
+      display: flex;
+      padding: 10px 0;
+      &:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
+    }
+    
+</style>
 <header>
         <h2> constantly under construction</h2>
 </header>
@@ -30,55 +104,47 @@
 <!-- open nav bar-->
 
 <div id="main">
-    <table class="table-style">
-        <thead>
-        <tr>
-            <th>Acquired</th>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>March 2022</td>
-                <td><a href="https://www.credly.com/badges/eb62168d-5789-4fe2-b358-921751d2872c">Agile Explorer</a></td>
-                <td>Foundational understanding of Agile values, principles, and practices.
-                    that allows them to initiate an Agile conversation with co-workers and colleagues.
-                </td>
-            </tr>
+    <h1>badges</h1>
+  
+    <blockquote> on the table below is a sample of the badges i have completed through my time as a student and most recently as an applcations developer apprentice </blockquote>
 
-            <tr>
-                <td>March 2022</td>
-                <td><a href="https://www.credly.com/badges/7d3ab636-3ce5-4323-aefe-2072d6d4ed66">Apprenticeship Program Professional Skills</a></td>
+    <div class="container">
+        
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-1">acquired</div>
+            <div class="col col-2">name</div>
+            <div class="col col-3">description</div>
+          </li>
 
-                <td>Through digital and applied learning and skills validation from their mentors, 
-                    they have demonstrated key soft skills and behaviors as follows: creating & delivering presentations; 
-                    effectively collaborating within teams; communicating for impact; 
-                    problem solving with critical thinking; giving & receiving feedback; fostering creative thinking for innovation; 
-                    and effective decision making. </td>
-            </tr>
+          <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42235</div>
+            <div class="col col-2" data-label="Customer Name">John Doe</div>
+            <div class="col col-3" data-label="Amount">$350</div>
 
-            <tr>
-                <td>March 2022</td>
-                <td><a href="https://www.credly.com/badges/cd3040c4-cac2-477f-a525-794d684f5aac">Enterprise Design Thinking Practitioner</a></td>
-                <td>Aquired knowlede of <a href="https://www.ibm.com/design/thinking/">IBM Enterprise Design Thinking </a>and its value</td>
-            </tr>
+          </li>
+          <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42442</div>
+            <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+            <div class="col col-3" data-label="Amount">$220</div>
+          </li>
 
-            <tr>
-                <td>June 2022</td>
-                <td><a href="https://www.credly.com/badges/0b095633-f940-4155-9791-180d90101335">Garage Essentials</a></td>
-                <td>Understanding of IBM Garage Methodology, assets and platforms</td>
-            </tr>
+          <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42257</div>
+            <div class="col col-2" data-label="Customer Name">John Smith</div>
+            <div class="col col-3" data-label="Amount">$341</div>
+          </li>
 
-            <tr>
-                <td> April 2022 </td>
-                <td><a href="https://www.credly.com/badges/b5b12483-8000-4490-b528-25728c7195bd">Open Source Foundations</a></td>
-                <td> Understands what an open source project is and how to use common open source tools. Is able to
-                    find and contribute to open source projects, and is able to create and lead an open source project.</td>
-            </tr>
+          <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42311</div>
+            <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+            <div class="col col-3" data-label="Amount">$115</div>
+            
+          </li>
+        </ul>
+      </div>
 
-        </tbody>
-    </table>
+      <caption>last updated 2022 august</caption>
 </div>
    
 
