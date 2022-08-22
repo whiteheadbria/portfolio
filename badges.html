@@ -5,7 +5,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet"/>
     <title> badges </title>
     <link rel ="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js">
+    </script>
 </head>
 <style>
 
@@ -64,7 +65,7 @@ small {
     .table-header {
       display: none;
     }
-
+  }
     li {
         display: block;
     }
@@ -106,39 +107,39 @@ small {
 <div id="main">
     <h1>badges</h1>
   
-    <blockquote> on the table below is a sample of the badges i have completed through my time as a student and most recently as an applcations developer apprentice </blockquote>
+    <blockquote> on the table below is a sample of the <a href = "https://www.credly.com/users/bria-whitehead.27d22eb0/badges"> badges </a> i have completed through my time as a student and most recently as an applcations developer apprentice </blockquote>
 
     <div class="container">
         
         <ul class="responsive-table">
           <li class="table-header">
-            <div class="col col-1">acquired</div>
-            <div class="col col-2">name</div>
-            <div class="col col-3">description</div>
+            <div class="col col-0" onclick="sortTable(0)">acquired</div>
+            <div class="col col-1" onclick="sortTable(1)">name</div>
+            <div class="col col-2" onclick="sortTable(2)">description</div>
           </li>
 
           <li class="table-row">
-            <div class="col col-1" data-label="Job Id">42235</div>
-            <div class="col col-2" data-label="Customer Name">John Doe</div>
-            <div class="col col-3" data-label="Amount">$350</div>
+            <div class="col col-0" onclick="sortTable(0)">may 2022</div>
+            <div class="col col-1" onclick="sortTable(1)"></div>
+            <div class="col col-2" onclick="sortTable(2)">$350</div>
 
           </li>
           <li class="table-row">
-            <div class="col col-1" data-label="Job Id">42442</div>
-            <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
-            <div class="col col-3" data-label="Amount">$220</div>
+            <div class="col col-0" onclick="sortTable(0)">42442</div>
+            <div class="col col-1" onclick="sortTable(1)">Jennifer Smith</div>
+            <div class="col col-2" onclick="sortTable(2)">$220</div>
           </li>
 
           <li class="table-row">
-            <div class="col col-1" data-label="Job Id">42257</div>
-            <div class="col col-2" data-label="Customer Name">John Smith</div>
-            <div class="col col-3" data-label="Amount">$341</div>
+            <div class="col col-0" onclick="sortTable(0)">42257</div>
+            <div class="col col-1" onclick="sortTable(1)">John Smith</div>
+            <div class="col col-2" onclick="sortTable(2)">$341</div>
           </li>
 
           <li class="table-row">
-            <div class="col col-1" data-label="Job Id">42311</div>
-            <div class="col col-2" data-label="Customer Name">John Carpenter</div>
-            <div class="col col-3" data-label="Amount">$115</div>
+            <div class="col col-0" onclick="sortTable(0)">42311</div>
+            <div class="col col-1" onclick="sortTable(1)">John Carpenter</div>
+            <div class="col col-2" onclick="sortTable(2)">$115</div>
             
           </li>
         </ul>
