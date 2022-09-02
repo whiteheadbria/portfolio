@@ -44,3 +44,4 @@ import { IconContext } from "react-icons/lib";
   const Sidebar = () => 
 
 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
