@@ -1,7 +1,6 @@
 import React from "react";
 import { Home } from "grommet-icons";
 import { HiBadgeCheck } from "react-icons/hi";
-import { Projects } from "grommet-icons";
 import { Github } from "grommet-icons";
 import { HiMail } from 'react-icons/hi';
 import { Linkedin } from "grommet-icons";
@@ -29,14 +28,9 @@ export const SidebarData = [
     {
         title: "projects",
         path:"/projects",
-        icon: <Projects />
-    },
-
-    {
-        title: "github",
-        path:"/github",
         icon: <Github />
     },
+
 
     {
         title: "lets keep in touch",
