@@ -4,6 +4,8 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
-import { IconContext } from "react-icons";
+import { IconContext } from "react-icons/lib";
+
+
 
 

@@ -1,17 +1,18 @@
 import React from "react";
-import { GrHome } from 'react-icons/gr';
-import { HiBadgeCheck } from 'react-icons/hi';
-import { GrProjects } from 'react-icons/gr';
-import { GrGithub } from 'react-icons/gr ';
+import { Home } from "grommet-icons";
+import { HiBadgeCheck } from "react-icons/hi";
+import { Projects } from "grommet-icons";
+import { Github } from "grommet-icons";
 import { HiMail } from 'react-icons/hi';
-import { GrLinkedinOption } from "react-icons/gr";
+import { Linkedin } from "grommet-icons";
+
 
 
 export const SidebarData = [ 
     {
         title: "home",
         path: "/home",
-        icon: <GrHome />
+        icon: <Home />
     },
 
     {
@@ -28,13 +29,13 @@ export const SidebarData = [
     {
         title: "projects",
         path:"/projects",
-        icon: <GrProjects />
+        icon: <Projects />
     },
 
     {
         title: "github",
         path:"/github",
-        icon: <GrGithub />
+        icon: <Github />
     },
 
     {
@@ -46,7 +47,7 @@ export const SidebarData = [
     {
         title: "linkedin",
         path:"/linkedin",
-        icon: <GrLinkedinOption />
+        icon: <Linkedin />
     },
 
 ];
