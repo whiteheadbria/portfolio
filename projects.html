@@ -5,44 +5,204 @@
     <meta name ="viewport" content="initial-scale=1, width=device-width">
     <title> porfolio </title>
     <link rel ="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js">
+      
+    </script>
 
-<style>
-</style>
-   
-</head>
+    <style>
+      *, 
+      *:before, 
+      *::after {
+        box-sizing: border-box;
+      }
 
-<header>
-        <h2> constantly under construction</h2>
-</header>
+      html {
+        background-color: #f0f0f0;
+      }
 
-<body>
-    <div id = "sidenav" class="sidenavbar">
-        <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
-        <span class="material-symbols-outlined">
-            <a href="index.html">home</a> </span>
-        <a href="aboutme.html" > about me </a>
-        <a href="badges.html"> badges </a> 
-        <a href="projects.html"> projects </a>  
-        <a href="https://github.com/whiteheadbria" target="_blank" rel="noopener noreferrer">github repos</a> 
-        <a href="mailto:whitehead.bria@protonmail.com?Subject =Found your portfolio website"> let's keep in touch</a> <!--subject line not working-->
-        <a href="https://www.linkedin.com/in/briawhitehead" target="_blank" rel="noopener noreferrer"> linkedin</a> 
-    </span>
-   </div>
-   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
-</span>
+      body {
+        color:#999999;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0;
+        padding: 1rem;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+      }
 
-<!-- open nav bar-->
+      img {
+        height:auto;
+        max-width: 100%;
+        vertical-align: middle;
+      }
 
-<div id = "main">
+      .btn {
+        background-color: white;
+        border: 1px solid #cccccc;
+        border-radius: 1rem;
+        color:#696969;
+        padding: 0.5rem;
+        text-transform: lowercase;
+      }
+
+      .btn-block {
+        display: block;
+        width: 100%;
+      }
+
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding:0;
+      }
+
+      .projects_item {
+        display:flex;
+        padding:1rem;
+        @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+        
+      }
+
+        .project {
+          background-color: white;
+          border-radius: 0.25rem;
+          display:flex;
+          flex-direction: column;
+          overflow: hidden;
+          box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+        }
+
+        .project_content {
+          display: flex;
+          flex: 1 1 auto;
+          flex-direction: column;
+          padding: 1rem;
+        }
+
+        .project_image {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-top-left-radius: 0.25rem;
+          border-top-right-radius:0.25rem;
+          overflow: hidden;
+          position: relative;
+          content: "";
+	        display: block;
+          padding-top: 56.25%; 
+          }
+          @media(min-width: 40rem) {
+          ::before {
+          padding-top: 66.6%; 
+          }
+        }
+
+        .project_title {
+          color:#696969;
+          font-size: 1.25rem;
+          font-weight: 300;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+
+        .project_text {
+          flex: 1 1 auto;
+          font-size: 0.875rem;
+          line-height: 1.5;
+          margin-bottom: 1.25rem;
+        }
   
-  <h1>projects</h1>
-  <hr>
-  <a href="https://github.com/whiteheadbria" target="_blank" rel="noopener noreferrer">my github repos website</a> 
+    </style>
+     
+  
+  </head>
+  
+  <header>
+          <h2> constantly under construction</h2>
+  </header>
+  
+  <body>
+      <div id = "sidenav" class="sidenavbar">
+          <a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a>
+          <span class="material-symbols-outlined">
+              <a href="index.html">home</a> </span>
+          <a href="aboutme.html" > about me </a>
+          <a href="badges.html"> badges </a> 
+          <a href="projects.html"> projects </a>  
+          <a href="github.html">github</a>
+          <a href="mailto:whitehead.bria@protonmail.com?Subject =Found your portfolio website"> let's keep in touch</a> <!--subject line not working-->
+          <a href="https://www.linkedin.com/in/briawhitehead" target="_blank" rel="noopener noreferrer"> linkedin</a> 
+      </span>
+     </div>
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+  </span>
+  
+  <!-- open nav bar-->
+  
+  <div id = "main">
+    
+    <h1>projects</h1>
+    <hr>
+    <a href="https://github.com/whiteheadbria" target="_blank" rel="noopener noreferrer">my github repos website</a> 
+    
+    <ul class="projects">
+      <li class="projects_item">
+        <div class="project">
+          <div class="project_image"><img src="star.jpg"> </div>
+          <div class="project_content">
+            <div class="project_title">title</div>
+            <p class="project_text"> random basic description</p>
+            <button class="btn btn-block">more</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="projects_item">
+        <div class="project">
+          <div class="project_image"><img src="star.jpg"> </div>
+          <div class="project_content">
+            <div class="project_title">title</div>
+            <p class="project_text"> random basic description</p>
+            <button class="btn btn-block">more</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="projects_item">
+        <div class="project">
+          <div class="project_image"> <img src="star.jpg"> </div>
+          <div class="project_content">
+            <div class="project_title">title</div>
+            <p class="project_text"> random basic description</p>
+            <button class="btn btn-block">more</button>
+          </div>
+        </div>
+      </li>
+
+      <li class="projects_item">
+        <div class="project">
+          <div class="project_image"> <img src="star.jpg"> </div>
+          <div class="project_content">
+            <div class="project_title">title</div>
+            <p class="project_text"> random basic description</p>
+            <button class="btn btn-block">more</button>
+          </div>
+        </div>
+      </li>
+    </ul>
   
 
-
-</div> <!-- main div-->
-
-</body>
-</html>
+     
+  </div> <!-- main div-->
+  
+  </body>
+  </html>
+  
